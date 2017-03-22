@@ -1,6 +1,10 @@
 
 # Mysql压力测试需求分析
 
+
+
+
+
 # 目录
 ## 一 背景（前言） 	2
 ## 二 Mysql 压力测试体系及包括的执行参数 	2
@@ -14,6 +18,10 @@
 
 
 
+
+
+
+
   
 版本号	公司	组别	日期
 Process.py 1.0	51job	System	2013.01.15
@@ -24,10 +32,22 @@ Process.py 1.0	51job	System	2013.01.15
 
 
 
+
+
+
+
+
+
+
+
 ### 一、	背景（前言）
 摘要： “前程无忧”(Nasdaq:JOBS) 
 
 关键字 ：Mysql，数据库，压力测试，多进程，CPU利用率，随机数
+
+
+
+
 
 ### 二、	Mysql 压力测试体系及包括的执行参数
 
@@ -91,12 +111,19 @@ optional arguments:
 
 
 
+
+
+
 ### 三、	执行命令及解释
 python Process.py  -a single -o select -w S -v 5000
 python Process.py  - a single -o select -w T -v 2 -n 6
 python Process.py  -a single -o select -w T -v 2 -n 8
 python Process.py  -a all  -w T -v 1 -n 2
 python Process.py  -a all  -w T -v 1
+
+
+
+
 
 ### 四、	执行展示
 1.执行 脚本 选择 单逻辑 select操作；按 次数 S  5000 个随机数；开启6个进程
